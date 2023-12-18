@@ -18,16 +18,15 @@ ex. distribution = [3, 4, 5, 1, 2, 6, 3, 2, 4, 3, 1] 이라면
 */
 
 func plusReplace() {
-	var distribution: [Int] = [3, 4, 5, 1, 2, 6, 3, 2, 4, 3, 1]
+   var distribution: [Int] = [3, 4, 5, 1, 2, 6, 3, 2, 4, 3, 1]
 
-	for i in 0..<distribution.count {
-		var rangeStr = "-" + String(i * 10 + 9)
-		if i == 10 { rangeStr = "" }
-
-		let plus = String(repeating: "+", count: distribution[i])
-
-		print("\(i * 10)\(rangeStr) : \(plus)")
-	}
+   for i in 0..<distribution.count {
+       var rangeStr = "-" + String(i * 10 + 9)
+       if i == 10 { rangeStr = "" }
+	   
+       let plus = String(repeating: "+", count: distribution[i])
+       print("\(i * 10)\(rangeStr) : \(plus)")
+    }
 }
 
 plusReplace()
